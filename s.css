@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "KaiTi", "STKaiti", serif;
+}
+
+#first {
+    width: 100vw;
+    margin: 0 auto;
+    background: none;
+}
+#first .dhl{
+    width: 100vw;
+    position: relative;
+    z-index: 9999;
+}
+.dhl {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c0008;
+    margin: 0 auto;
+    overflow: visible;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.dhl a {
+    font-family: "黑体", sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 60px;
+    transition: color 0.3s;
+}
+
+.tp1 {
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tp1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+}
+
+.da1, .da2, .da3 {
+    height: 60px;
+    padding: 0 25px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    position: relative;
+    color: #fff;
+    font-family: "黑体", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.da1:hover, .da2:hover, .da3:hover {
+    background-color: #b9000b;
+}
+
+/* 下拉菜单 修复 + 横向排列 */
+.da3 ul {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    background-color: #8c0008;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    z-index: 9999;
+}
+.da3:hover ul{
+    display: flex;
+}
+.da3 ul li{
+    display: flex;
+}
+.da3 ul li a {
+    width: 90px;
+    height: 44px;
+    color: #fff;
+    line-height: 44px;
+    font-size: 16px;
+    display: block; 
+    text-align: center;
+    text-decoration: none;
+}
+.da3 ul li a:hover {
+    background-color: #b9000b;
+}
+
+/* 最外层全屏大背景图（左右铺满屏幕） */
+.top-bg {
+  width: 100%;
+  min-height: 2000px;    /* 高度足够放下所有建筑 */
+  background: url("/zgjsjds/images/故宫地图.png") center top no-repeat;
+  background-size: 100% auto; /* 左右铺满 */
+  position: relative;
+  padding-bottom: 200px;
+}
+
+/* 中轴线容器：水平居中 */
+.axis-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 单个建筑项目 */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 建筑图片 */
+.item img {
+  width:200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+.item img:hover {
+  transform: scale(1.18); /* 悬浮放大 */
+}
+
+/* 建筑名称 */
+.name {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 6px #000, 0 0 12px #ffd700;
+  transition: all 0.3s ease;
+}
+.name:hover {
+  transform: scale(1.25);
+  color: #ffd700; /* 悬浮变金色 */
+}
+#shenwumen    { margin-top: 0px; }
+#shenwumen    { margin-bottom: 220px; }
+#kunninggong  { margin-bottom: 65px; }
+#qianqinggong { margin-bottom: 45px; }
+#qianqingmen  { margin-bottom: 30px; }
+#baohedian    { margin-bottom: 30px; }
+#zhonghedian  { margin-bottom: 30px; }
+#taihedian    { margin-bottom: 65px; }
+#taihemen     { margin-bottom: 160px; }
+#wumen        { margin-bottom: 0px; }
+
+.jiewei {
+    max-width: 1980px;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+   background-color: #8c0008;
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+.jiewei ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+.jiewei ul li:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.jiewei ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
