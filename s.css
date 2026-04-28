@@ -118,7 +118,7 @@
 .top-bg {
   width: 100%;
   min-height: 2000px;    /* 高度足够放下所有建筑 */
-  background: url("/zgjsjds/images/故宫地图.png") center top no-repeat;
+  background: url("/zgjsjds/images/ggdt.png") center top no-repeat;
   background-size: 100% auto; /* 左右铺满 */
   position: relative;
   padding-bottom: 200px;
