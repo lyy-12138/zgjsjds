@@ -16,7 +16,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url(/zgjsjds/gugongmap.png); 
+    background-image: url(gugongmap.png); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(/zgjsjds/left.png);
+    background-image: url(left.png);
     background-color: #8B0000;
      transform-origin: left center;
     transition: transform 1.0s cubic-bezier(0.2, 0.8, 0.3, 1);
@@ -55,7 +55,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(/zgjsjds/right.png);
+    background-image: url(right.png);
      background-color: #8B0000;
     transform-origin: right center;
     transition: transform 1.0s cubic-bezier(0.2, 0.8, 0.3, 1);
@@ -96,7 +96,7 @@
     border: none;
     cursor: pointer;
     z-index: 100;
-    background-image: url('/zgjsjds/button.png');
+    background-image: url('button.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
